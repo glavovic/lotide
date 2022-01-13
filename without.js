@@ -17,3 +17,31 @@ const assertArraysEqual = function(arr1, arr2) {
 };
 
 console.log(assertArraysEqual([1, 2, 3], [1, 2, 4]));
+
+
+const without = function(source, toRemove) {
+
+  let cleanArr = [];
+
+  for (let i = 0; i < source.length; i++) {
+
+    cleanArr.push(source[i]);
+    for (let x = 0; x < toRemove.length; x++) {
+      if (source[i] === toRemove[x]) {
+        cleanArr.pop();
+      }
+    }
+  }
+  return cleanArr;
+};
+
+
+
+
+
+
+
+const words = ["hello", "world", "lighthouse"];
+without(words, ["lighthouse"]); // no need to capture return value for this test case
+// Make sure the original array was not altered by the without function
+assertArraysEqual(words, ["hello", "world", "lighthouse"]);
