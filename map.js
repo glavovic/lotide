@@ -1,6 +1,6 @@
 const words = ["ground", "control", "to", "major", "tom"];
 const animals = ['dog', 'giraffe', 'whale'];
-const cities = ['montreal', 'vancouver', 'toronto']
+const cities = ['montreal', 'vancouver', 'toronto'];
 
 
 const map = function(array, callback) {
@@ -12,12 +12,12 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
 
-  return results
-}
+  return results;
+};
 
 const results1 = map(words , word => word[0]);
-const results2 = map(animals, animal => animal[0])
-const results3 = map(cities, city => city[0])
+const results2 = map(animals, animal => animal[0]);
+const results3 = map(cities, city => city[0]);
 
 
 const eqArrays = function(arr1, arr2) {
@@ -38,9 +38,9 @@ const assertArraysEqual = function(arr1, arr2) {
   return console.log(`Assertion Failed: ${arr1} !== ${arr2}`);
 };
 
-assertArraysEqual([ 'g', 'c', 't', 'm', 't' ], results1)
+assertArraysEqual([ 'g', 'c', 't', 'm', 't' ], results1);
 
-assertArraysEqual(['d', 'g', 'w' ], results2)
+assertArraysEqual(['d', 'g', 'w' ], results2);
 
-assertArraysEqual(['m', 'v', 'y' ], results3)
+assertArraysEqual(['m', 'v', 'y' ], results3);
 
