@@ -1,21 +1,3 @@
-const eqArrays = function(arr1, arr2) {
-  if (arr1.length === arr2.length) {
-    for (let x = 0; x < arr1.length; x++) {
-      if (arr1[x] !== arr2[x]) {
-        return false;
-      }
-    }
-  }
-  return true;
-};
-
-const assertArraysEqual = function(arr1, arr2) {
-  if (eqArrays(arr1, arr2,) === true) {
-    return console.log(`Assertion Passed: ${arr1} === ${arr2}`);
-  }
-  return console.log(`Assertion Failed: ${arr1} !== ${arr2}`);
-};
-
 /* The middle function should return an array with only the middle element(s) of
 the provided array. This means that the length of the returned elements could vary.
 
@@ -41,7 +23,5 @@ const middle = function(array) {
   return midArray;
 };
 
-assertArraysEqual(middle([1, 2, 3, 4]), [2, 3]);
-
-assertArraysEqual(middle([1, 2, 3, 4, 5]), [3]);
+module.exports = middle;
 
