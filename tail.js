@@ -1,5 +1,3 @@
-
-
 const tail = function(arr) {
   
   let tail = [];
@@ -10,6 +8,4 @@ const tail = function(arr) {
   return tail;
 };
 
-// test case
-console.log(tail([1, 2, 3, 4]));
-console.log(tail(["Hello", "Lighthouse", "Labs"]));
+module.exports = tail
