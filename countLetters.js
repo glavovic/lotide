@@ -18,8 +18,4 @@ const countLetters = function(letterCounter) {
 };
 
 
-// testing
-
-const string1 = "lighthouse in the house";
-
-countLetters(string1);
+module.exports = countLetters;

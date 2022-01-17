@@ -16,12 +16,10 @@ const middle = function(array) {
   }
   if (array.length % 2 === 0) {
     midArray = array.splice(array.length / 2 - 1, 2);
-    console.log(midArray);
     return midArray;
   }
   midArray = array.splice(Math.floor(array.length / 2), 1);
   return midArray;
 };
-
 module.exports = middle;
 
