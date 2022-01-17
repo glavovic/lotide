@@ -8,4 +8,4 @@ const tail = function(arr) {
   return tail;
 };
 
-module.exports = tail
+module.exports = tail;
